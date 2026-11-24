@@ -1,0 +1,23 @@
+<svg width="1000" height="340" viewBox="0 0 1000 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="340" rx="16" fill="#0B1120" stroke="#1E293B"/>
+  <text x="48" y="52" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700">
+    Attribution Signal Recovery: Browser-Only Pixel vs. Server-Side CAPI Gateway
+  </text>
+  <text x="48" y="78" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="14">
+    Client-only pixels lose conversions to ITP/ad-blockers; server-side CAPI restores deterministic matching.
+  </text>
+
+  <text x="48" y="136" fill="#CBD5E1" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="600">
+    Browser Pixel Only (Blocked by Safari ITP / Ad Blockers)
+  </text>
+  <rect x="48" y="152" width="420" height="40" rx="8" fill="#475569"/>
+  <text x="258" y="177" text-anchor="middle" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600">Partial Client Signals + No PII Hashing</text>
+  <text x="490" y="177" fill="#F87171" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700">Lower Event Match Quality</text>
+
+  <text x="48" y="232" fill="#34D399" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="600">
+    Pixel + meta-capi-edge-gateway (Shared event_id + SHA-256 + fbc/fbp)
+  </text>
+  <rect x="48" y="248" width="660" height="40" rx="8" fill="#059669"/>
+  <text x="378" y="273" text-anchor="middle" fill="#FFFFFF" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700">Deduplicated Server Signal + EMQ Audit (em, ph, fbc, fbp, external_id)</text>
+  <text x="728" y="273" fill="#34D399" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700">Up to 10/10 EMQ</text>
+</svg>

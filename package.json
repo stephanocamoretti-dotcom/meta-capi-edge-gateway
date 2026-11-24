@@ -1,0 +1,21 @@
+{
+  "name": "meta-capi-edge-gateway",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Edge-ready Server-Side Tracking & AdTech Gateway for Meta Conversions API with deterministic event_id deduplication and EMQ scoring.",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "hono": "^4.6.10",
+    "@hono/node-server": "^1.13.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
